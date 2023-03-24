@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="images/favicon.png" type="image/png" sizes="16x16">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PowerPal - Rutine</title>
+    <link rel="stylesheet" href="css/routines.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,300" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script src="https://unpkg.com/chart.js@2.8.0/dist/Chart.bundle.js"></script>
+  <script src="https://unpkg.com/chartjs-gauge@0.3.0/dist/chartjs-gauge.js"></script>
+  <script src = "/js/rutine.js"></script>
+</head>
+<body>
+    <header>
+        <script src="js/navbar.js"></script>
+    </header>
+    <section class="routine">
+        <div id="form-backdrop"></div>
+        <div id="form-popup">
+            <form>
+                <div class = "form-input">
+              <button id="close-btn" class="close-btn">&times;</button>
+              <input type="text" name="name" placeholder="Ime uređaja:"><br>
+              <input type="text" name="name" placeholder="Proizvođać:"><br>
+              <input type="text" name="name" placeholder="Serijski broj:">
+              <button id = "submit-button" type="submit">Submit</button>
+                </div>
+            </form>
+          </div>
+        <div class="title">Rutine</div>
+        <h1>Trenutne rutine</h1>
+        <div class="routine-grid">
+            <div class="routine-row">
+            <div class="routine-item">
+                <span class="material-symbols-outlined" style="font-size: 32pt;">
+                    climate_mini_split
+                    </span>
+                <h3>Klima</h3>
+                <p>Aktivna od 05:00 do 07:00</p>
+            </div>
+            <div class="routine-item">
+                <span class="material-symbols-outlined" style="font-size: 32pt;">
+                    dishwasher_gen
+                    </span>
+                <h3>Mašina za suđe</h3>
+                <p>Aktivna od 02:00 do 03:00</p>
+            </div>
+            <div class="routine-item">
+                <span class="material-symbols-outlined" style="font-size: 32pt;">
+                    oven_gen
+                    </span>
+                <h3>Pećnica</h3>
+                <p>Aktivna od 14:00 do 15:00</p>
+            </div>
+            <div class="routine-item">
+                <span class="material-symbols-outlined" style="font-size: 32pt;">
+                    tv
+                    </span>
+                <h3>Televizija</h3>
+                <p>Aktivna od 08:00 do 00:00</p>
+            </div>
+            </div>
+            <div class="routine-row">
+                <div class="routine-item">
+                    <span class="material-symbols-outlined" style="font-size: 32pt;">
+                        water_heater
+                        </span>
+                    <h3>Bojler</h3>
+                <p>Aktivna od 05:00 do 07:00</p>
+                </div>
+                <div class="routine-item">
+                    <span class="material-symbols-outlined" style="font-size: 32pt;">
+                        light
+                        </span>
+                    <h3>Svjetla</h3>
+                    <p>Aktivna od 18:00 do 06:00</p>
+
+                </div>
+                <div class="routine-item">
+                    <span class="material-symbols-outlined" style="font-size: 32pt;">
+                        power
+                        </span>
+                    <h3>Ostali uređaji</h3>
+                <p>Aktivni od 09:00 do 00:00</p>
+                </div>
+
+                <div id="routine-item" onclick="openForm()">
+                    <span class="material-symbols-outlined" style="font-size: 32pt;">
+                        add
+                        </span>
+                    <h3>Dodaj uređaj</h3>
+                <p><br></p>
+                </div>
+                </div>
+
+                
+
+                
+        </div>
+        
+        <div class="containy">
+            <div>
+                <h1>PowerPal Score</h1>
+                <div id="canvas-holder">
+                    <canvas id="chart"></canvas>
+                </div>
+            </div>
+            <div>
+                <h1>Preporuke</h1>
+                <div class="alert">Isključite svjetla i elektronske uređaje kada ih ne koristite. Program prati vašu upotrebu i uči kako bi efikasno pomogao u uštedi struje.<br> </div>
+                <div>
+                    <br>
+                </div>
+                <h1>Upozorenja</h1>
+                <div class="alertred">Phillips Hue sijalica u dnevnom boravku je odspojena sa mreže!</div>
+            </div>
+            
+            
+    </section>
+    <script src="js/footer.js"></script>
+    <script src="js/chartroute.js"></script>
+</body>
+</html>

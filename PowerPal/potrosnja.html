@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" href="images/favicon.png" type="image/png" sizes="16x16">
+    <title>PowerPal - Potrošnja</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/spending.css">
+  </head>
+  <body>
+    <header>
+        <script src="js/navbar.js"></script>
+    </header>
+      <section class="spendature">
+        <div class="title">Potrošnja</div>
+        <h1>Pregledi potrošnje:</h1>
+        <div class="graph-container">
+            <canvas id="canvas-2"></canvas>
+        </div>
+        <h1>Kućni aparati:</h1>
+        <div class="graph-container">
+            <canvas id="canvas-3"></canvas>
+        </div>
+        <div class="manuel">
+          <h1 class="middle">Pregledaj potrošnju za odabrani dan:</h1>
+          <form>
+            <label for="date">Datum:</label>
+            <input type="date" id="date" name="date">
+            <button type="submit">Pregledaj</button>
+          </form>
+          </div>
+          <div class="graph-container" style="margin-top: 50px;">
+            <canvas id="canvas-1"  style="margin-top: 50px;padding-bottom: 40px;"></canvas>
+          </div>
+    </section>
+    <script src="js/footer.js"></script>
+      <script src="vendors/chart.js/js/chart.min.js"></script>
+    <script src="vendors/@coreui/chartjs/js/coreui-chartjs.js"></script>
+    <script src="js/chart2.js"></script>
+    <style>
+
+    </style>
+  </body>
+</html>

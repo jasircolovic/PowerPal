@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,100;0,300;0,400;0,500;0,600;0,800;1,400&display=swap');
+/*
+body{
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	font-family: 'Sofia Sans', sans-serif;
+	background: linear-gradient(to bottom, rgba(202, 252, 108,0.8), rgba(101, 150, 113,.8), #4b7054);
+}
+*/
+@import url('https://fonts.googleapis.com/css2?family=Asap&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Sofia Sans', sans-serif;
+  scroll-behavior: smooth;
+}
+body{
+    background: linear-gradient(to bottom, rgba(202, 252, 108,0.8), rgba(102, 190, 124, 0.8),#304134);
+  }
+section{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container{
+  display:block;
+}
+
+footer {
+  background-color: #344638;
+  padding: 20px;
+  text-align: center;
+  
+}
+.p-footer{
+  letter-spacing: 2px;
+  color:#fffcf5;
+}
+
+
+.container-f {
+  max-width: 960px;
+  margin: 0px auto;
+}
+img{
+  width: 50vw;
+  margin: 0 auto;
+}
+section:nth-child(1){
+  color: rgb(255, 255, 255);;
+  }
+section:nth-child(2){
+    color: white;
+} 
+section:nth-child(3){
+  color: rgb(255, 255, 255);
+}
+section:nth-child(4){
+  color: #344638;
+  background: #fffcf5;
+}
+section .container{
+  margin: 100px;
+}
+section h1{
+  font-size: 3rem;
+  margin: 20px;
+}
+section h2{
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+}
+section .text-container{
+   display: flex;
+}
+section .text-container .text-box{
+  margin: 20px;
+  padding: 20px;
+  background: #304134;
+  border-radius: 15px;
+}
+section .text-container .text-box h3{
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 900px){
+  section h1{
+    font-size: 2rem;
+    text-align: center;
+  }
+  section .text-container{
+    flex-direction: column;
+  }
+}
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+p{
+  font-size: x-large;
+  text-align:center;
+}
+
+/* CSS */
+.button {
+  align-items: center;
+  background-color: #304134;
+  border: 0;
+  border-radius: 100px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system, system-ui, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  justify-content: center;
+  max-width: 480px;
+  min-height: 40px;
+  min-width: 0px;
+  overflow: hidden;
+  padding: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  touch-action: manipulation;
+  transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  user-select: none;
+  -webkit-user-select: none;
+  transform: translateX(19vw);
+}
+
+.button:hover,
+.button:focus { 
+  background-color: rgb(71, 100, 78);
+  color: #ffffff;
+}
+
+.button:active {
+  background: #09223b;
+  color: rgb(255, 255, 255, .7);
+}
+
+.button:disabled { 
+  cursor: not-allowed;
+  background: rgba(0, 0, 0, .08);
+  color: rgba(0, 0, 0, .3);
+}
+
+ /*jfkffk*/
+
+ /*html {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0071b7;
+}*/
+.scroll-arrow {
+  width: 22px;
+  height: 22px;
+  transform: rotate(45deg);
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+  animation: arrow-wave 1s infinite;
+  animation-direction: alternate;
+}
+.scroll-arrow:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.scroll-arrow:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.scroll-arrow:nth-child(3) {
+  animation-delay: 0.3s;
+}
+@keyframes arrow-wave {
+  0% {
+    opacity: 0;
+ }
+  50% {
+    opacity: 0.5;
+ }
+  100% {
+    opacity: 1;
+ }
+}

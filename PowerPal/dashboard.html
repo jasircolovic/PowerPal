@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>PowerPal - Dashboard</title>
+    <link rel="icon" href="images/favicon.png" type="image/png" sizes="16x16">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,300" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+    <header>
+        <script src="js/navbar.js"></script>
+    </header>
+    <section class="dashboard">
+        <div class="title">Dashboard</div>
+        <div class="graph-container" onclick="window.location.href='potrosnja.html';">
+        <canvas id="canvas-1"></canvas>
+        </div>
+        <div id = "thing">
+            <div id="thing1">      
+                <h2>Prosječna potrošnja:</h2>
+                <p id = "avg"></p>
+            </div>
+            <div id="thing2">
+                <h2>Današnja potrošnja:</h2>
+                <p id = "daily"></p>
+            </div>
+        </div>
+    </section>
+    <script src="js/footer.js"></script>
+      <script src="vendors/chart.js/js/chart.min.js"></script>
+    <script src="vendors/@coreui/chartjs/js/coreui-chartjs.js"></script>
+    <script src="js/charts.js"></script>
+</body>
+</html>
